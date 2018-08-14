@@ -46,4 +46,8 @@ test('should show logout button when signed in', async () => {
   const keys = require('../config/keys');
   const keygrip = new Keygrip([keys.cookieKey]);
   const sig = keygrip.sign('session=' + sessionString);
+
+  await page.setCookie({ name: 'session', value: sessionString });
+  await page.setCookie({ name: 'session.sig', value: sig });
+  await page.goto('localhost:3000');
 });
