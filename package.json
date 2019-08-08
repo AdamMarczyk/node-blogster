@@ -27,7 +27,7 @@
     "express": "^4.15.3",
     "jest": "^24.0.0",
     "migrate-mongoose": "^3.2.2",
-    "mongoose": "^4.13.17",
+    "mongoose": "^5.6.9",
     "nodemon": "^1.14.11",
     "passport": "^0.3.2",
     "passport-google-oauth20": "^1.0.0",
